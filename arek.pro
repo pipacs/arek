@@ -1,4 +1,4 @@
-VERSION = 0.0.1
+VERSION = 0.0.2
 
 folder_01.source = qml/arek
 folder_01.target = qml

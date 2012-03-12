@@ -1,5 +1,11 @@
+arek (0.0.2) unstable; urgency=low
+
+  * Fix orientation bugs.
+
+ -- Akos Polster <akos@pipacs.com>  Mon, 12 Mar 2012 16:21:56 +0100
+
 arek (0.0.1) unstable; urgency=low
 
   * Initial Release.
 
- -- unknown <polster@unknown>  Sat, 10 Mar 2012 18:21:56 +0100
+ -- Akos Polster <akos@pipacs.com>  Sat, 10 Mar 2012 18:21:56 +0100
