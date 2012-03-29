@@ -23,6 +23,9 @@ class Counter: public QObject, public QAccelerometerFilter {
     /// Reading: a dictionnary of "date":date, "x":real, "y":real, "z":real.
     Q_PROPERTY(QVariantMap reading READ reading NOTIFY readingChanged)
 
+    /// Version.
+    Q_PROPERTY(QString version READ version CONSTANT)
+
 public:
     explicit Counter(QObject *parent = 0);
     ~Counter();
@@ -31,6 +34,7 @@ public:
     int dataRate();
     void setDataRate(int v);
     QVariantMap reading();
+    QString version();
 
 signals:
     void runningChanged();
@@ -38,8 +42,6 @@ signals:
     void readingChanged(QVariantMap r);
 
 private slots:
-
-    // Override of QAcclerometerFilter::filter(QAccelerometerReading*)
     bool filter(QAccelerometerReading* r);
 
 public:

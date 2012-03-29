@@ -1,3 +1,10 @@
+arek (0.0.3) unstable; urgency=low
+
+  * Run accelerometer at 20Hz
+  * Record time as ms since Epoch
+
+ -- Akos Polster <akos@pipacs.com>  Mon, 12 Mar 2012 16:21:56 +0100
+
 arek (0.0.2) unstable; urgency=low
 
   * Fix orientation bugs.

@@ -21,7 +21,7 @@ Page {
                 source: "arek80.png"
             }
             Label {
-                text: "Accelerometer Rekorder"
+                text: "Accelerometer Rekorder " + counter.version
                 font.pixelSize: 32
             }
             Label {

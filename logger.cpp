@@ -70,7 +70,7 @@ void LoggerWorker::flush() {
         }
         QTextStream out(&f);
         foreach (QVariantMap r, readings_) {
-            out << r.value("date").toDateTime().toString(Qt::ISODate) << "," << r.value("x").toReal() << "," << r.value("y").toReal() << "," << r.value("z").toReal() << endl;
+            out << r.value("date").toLongLong() << "," << r.value("x").toReal() << "," << r.value("y").toReal() << "," << r.value("z").toReal() << endl;
         }
         f.close();
     }

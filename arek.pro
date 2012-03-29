@@ -1,4 +1,4 @@
-VERSION = 0.0.2
+VERSION = 0.0.3
 
 folder_01.source = qml/arek
 folder_01.target = qml
@@ -6,8 +6,15 @@ DEPLOYMENTFOLDERS = folder_01
 
 QML_IMPORT_PATH =
 
-symbian:TARGET.UID3 = 0xE0FBD61C
-symbian:TARGET.CAPABILITY += NetworkServices
+symbian {
+    TARGET.UID3 = 0xE0FBD61C
+    TARGET.CAPABILITY += NetworkServices
+    DEFINES += STEPS_VERSION='"$$VERSION"'
+}
+
+contains(MEEGO_EDITION,harmattan) {
+    DEFINES += AREK_VERSION=\\\"$$VERSION\\\"
+}
 
 QT += network
 QT += script
